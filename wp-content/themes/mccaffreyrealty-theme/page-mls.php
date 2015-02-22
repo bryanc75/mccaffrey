@@ -29,11 +29,6 @@
 
 									<h1 class="page-title"><?php the_title(); ?></h1>
 
-									<p class="byline vcard">
-										<?php printf( __( 'Posted <time class="updated" datetime="%1$s" itemprop="datePublished">%2$s</time> by <span class="author">%3$s</span>', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), get_the_author_link( get_the_author_meta( 'ID' ) )); ?>
-									</p>
-
-
 								</header>
 
 								<section class="entry-content cf" itemprop="articleBody">
@@ -61,8 +56,7 @@
 										) );
 									?>
 								</section>
-<iframe name="main" src="http://www.robertamccaffreyrealtyinc.yephomes.com/search/index.cfm"></iframe>
-
+<iframe src="http://hgmls.mlsmatrix.com/Matrix/public/IDX.aspx?idx=c256a8" width="1024px" height="800px" frameborder="0" marginwidth="0" marginheight="0"></iframe>
 								<footer class="article-footer">
 
                   <?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
@@ -88,9 +82,6 @@
 							<?php endif; ?>
 
 						</main>
-
-						<?php get_sidebar(); ?>
-
 				</div>
 
 			</div>
