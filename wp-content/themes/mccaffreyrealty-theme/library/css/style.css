@@ -23,6 +23,8 @@ the whole project.
 /* normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
 /* ========================================================================== HTML5 display definitions ========================================================================== */
 /** Correct `block` display not defined in IE 8/9. */
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:400,400italic);
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
 
 /** Correct `inline-block` display not defined in IE 8/9. */
@@ -215,6 +217,8 @@ http://ia.net/blog/responsive-typography-the-basics/
 http://alistapart.com/column/responsive-typography-is-a-physical-discipline
 
 ******************************************************************/
+/*font-family: 'Josefin Sans', sans-serif;font-weight:400italic;*/
+/*font-family: 'Josefin Slab', serif;*/
 /*********************
 FONT FACE (IN YOUR FACE)
 *********************/
@@ -513,7 +517,7 @@ and will be used across all viewports.
 /*********************
 GENERAL STYLES
 *********************/
-body { font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.5; color: #5c6b80; background-color: white; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body { font-family: 'Josefin Sans', Georgia, serif; font-size: 100%; line-height: 1.5; color: #5c6b80; background-color: white; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 /********************
 WORDPRESS BODY CLASSES
@@ -595,11 +599,14 @@ HEADER STYLES
 .header { background-color: white; }
 .header .wrap { border-bottom: 1px solid #323944; }
 
-#logo { display: block; position: relative; top: 30px; margin: 0 0 0 0; background: transparent url(/wp-content/uploads/2015/02/cropped-cropped-McCaffrey_logo_final_web1.jpg) no-repeat; width: 200px; height: 67px; color: #323944; }
+#logo { display: block; position: relative; top: 30px; margin: 0 0 0 0; background: transparent url(/wp-content/uploads/2015/02/cropped-McCaffrey_logo_final-e1424745462895.jpg) no-repeat; width: 300px; height: 150px; color: #323944; }
 #logo span { display: none; }
 
 .header-image { width: 100%; height: auto; }
 .header-image img { display: block; width: 100%; height: auto; }
+
+.contact { padding: 10px 0; font-size: 18px; }
+.contact a { color: blue; }
 
 /*********************
 NAVIGATION STYLES

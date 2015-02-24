@@ -55,6 +55,10 @@ http://ia.net/blog/responsive-typography-the-basics/
 http://alistapart.com/column/responsive-typography-is-a-physical-discipline
 
 ******************************************************************/
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,700,400italic,700italic);
+/*font-family: 'Josefin Sans', sans-serif;font-weight:400italic;*/
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:400,400italic);
+/*font-family: 'Josefin Slab', serif;*/
 /*********************
 FONT FACE (IN YOUR FACE)
 *********************/

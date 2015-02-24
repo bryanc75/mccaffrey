@@ -16,7 +16,7 @@ GENERAL STYLES
 *********************/
 
 body {
-	font-family: $lato;
+	font-family: 'Josefin Sans', Georgia, serif;
 	font-size: 100%;
 	line-height: 1.5;
 	color: $text-color;
@@ -164,9 +164,9 @@ HEADER STYLES
 		position:relative;
 		top:30px;
 		margin: 0 0 0 0;
-		background: transparent url(/wp-content/uploads/2015/02/cropped-cropped-McCaffrey_logo_final_web1.jpg) no-repeat;
-		width:200px;
-		height:67px;
+		background: transparent url(/wp-content/uploads/2015/02/cropped-McCaffrey_logo_final-e1424745462895.jpg) no-repeat;
+		width:300px;
+		height:150px;
 		color: $black;
 		span {display:none;}
 	}
@@ -179,6 +179,15 @@ HEADER STYLES
 		width:100%;
 		height:auto;
 	}
+}
+
+.contact {
+	padding:10px 0;
+	font-size:18px;
+	a {
+		color:blue;
+	}
+
 }
 
 /*********************

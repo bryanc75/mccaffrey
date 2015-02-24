@@ -75,3 +75,5 @@
 				</div>
 
 			</header>
+<div class="contact wrap"><a href="/contact" class="smcf-link">Contact Us</a> | visit us at 143 Main Street Cold Spring, NY 10516 | call us at 845-265-4113</div>
+
