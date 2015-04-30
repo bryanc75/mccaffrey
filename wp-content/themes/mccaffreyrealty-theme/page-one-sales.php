@@ -1,6 +1,6 @@
 <?php
 /*
- Template Name: Listings Page
+ Template Name: Recent Sales Page
  *
  * This is your custom page template. You can create as many of these as you need.
  * Simply name is "page-whatever.php" and in add the "Template Name" title at the
@@ -19,18 +19,19 @@
 
 				<div id="inner-content" class="wrap cf">
 
-						<main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+						<main id="main" class="m-all t-2of3 d-all cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 								<header class="article-header">
 
-									<h1 class="page-title">Exclusive Listings</h1>
+									<h1 class="page-title">Recent Sales</h1>
 
 								</header>
+
 							<?php
 							
 								$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 								$temp = $wp_query;
 								$wp_query= null;
-								$wp_query = new WP_Query('cat=5&posts_per_page=10&paged=' . $paged);
+								$wp_query = new WP_Query('cat=48&posts_per_page=10&paged=' . $paged);
 
 ?>
 							
@@ -38,7 +39,7 @@
 							
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
 
-								<header class="article-header cf">
+								<header class="article-header">
 								<?php the_post_thumbnail( 'medium' ); ?>
 								<?php 
 									$price = get_post_meta( get_the_ID(), 'Price', true );
@@ -47,8 +48,7 @@
 								?>
 								
 									<div class="overview">
-										<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a><br><span class="location"><?php echo $location; ?></span></h1>
-										<span class="price"><?php echo $price; ?></span>
+										<h1 class="h2 entry-title"><!-- <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"> --><?php the_title(); ?><!-- </a> --><br><span class="location"><?php echo $location; ?></span></h1>
 									
 									</div>
 
@@ -82,7 +82,6 @@
 							<?php // $wp_query = null; $wp_query = $temp; ?>
 
 						</main>
-						<?php get_sidebar(); ?>
 
 				</div>
 

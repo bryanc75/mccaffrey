@@ -4,10 +4,10 @@
 
 				<div id="inner-content" class="wrap cf">
 
-						<main id="main" class="m-all t-2of3 d-all cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+						<main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 <?php
 if ( is_home()) {
- query_posts($query_string . '&cat=-5' );
+ query_posts($query_string . '&cat=-5,-48' );
  }
  ?>							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -68,6 +68,7 @@ if ( is_home()) {
 
 
 						</main>
+					<?php get_sidebar('sidebar2'); ?>
 
 				</div>
 

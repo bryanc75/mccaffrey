@@ -33,12 +33,7 @@ HEADER STYLES
 
 .header {}
 
-	#logo {
-		width:190px;
-		height:100px;
-	}
-	
-	
+	#logo {}
 
 /*********************
 NAVIGATION STYLES
@@ -55,8 +50,7 @@ NAVIGATION STYLES
 		float: left;
 		position: relative;
 		background:$black;
-		width:auto;
-		padding-left:1.75em;
+
 		a {
 			border-bottom: 0;
 			color:$white;
@@ -81,15 +75,14 @@ NAVIGATION STYLES
 		ul.sub-menu,
 		ul.children {
 			margin-top: 0;
+			border: 1px solid #ccc;
+			border-top: 0;
 			position: absolute;
-			left:0;
-			width:100%;
 			visibility: hidden;
 			z-index: 8999;
 
 			li {
-				width:100%;
-				background:#444;
+
 				a {
 					padding-left: 10px;
 					border-right: 0;

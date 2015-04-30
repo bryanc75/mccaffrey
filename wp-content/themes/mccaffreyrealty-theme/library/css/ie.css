@@ -121,6 +121,10 @@ BOX SIZING
 /* @include box-sizing(border-box); */
 /* NOTE: value of "padding-box" is only supported in Gecko. So
 probably best not to use it. I mean, were you going to anyway? */
+/*********************
+BORDER RADIUS
+*********************/
+/* @include border-radius(radius); */
 /******************************************************************
 Site Name:
 Author:
@@ -214,21 +218,23 @@ LAYOUT & GRID STYLES
 /*********************
 HEADER STYLES
 *********************/
+#logo { width: 190px; height: 100px; }
+
 /*********************
 NAVIGATION STYLES
 *********************/
 .nav { border: 0; float: right; /* end .menu ul li */ /* highlight current page */ /* end current highlighters */ }
-.nav ul { background: #323944; margin-top: 0; }
-.nav li { float: left; position: relative; background: #323944; /*
+.nav ul { background: #000; margin-top: 0; }
+.nav li { float: left; position: relative; background: #000; width: auto; padding-left: 1.75em; /*
 plan your menus and drop-downs wisely.
 */ /* showing sub-menus */ }
-.nav li a { border-bottom: 0; color: white; text-transform: lowercase; /*
+.nav li a { border-bottom: 0; color: #fff; text-transform: lowercase; /*
 you can use hover styles here even though this size
 has the possibility of being a mobile device.
 */ }
-.nav li a:hover, .nav li a:focus { color: white; text-decoration: underline; }
-.nav li ul.sub-menu, .nav li ul.children { margin-top: 0; border: 1px solid #ccc; border-top: 0; position: absolute; visibility: hidden; z-index: 8999; /* highlight sub-menu current page */ }
-.nav li ul.sub-menu li, .nav li ul.children li { /*
+.nav li a:hover, .nav li a:focus { color: #5e81a6; text-decoration: none; }
+.nav li ul.sub-menu, .nav li ul.children { margin-top: 0; position: absolute; left: 0; width: 100%; visibility: hidden; z-index: 8999; /* highlight sub-menu current page */ }
+.nav li ul.sub-menu li, .nav li ul.children li { width: 100%; background: #444; /*
 if you need to go deeper, go nuts
 just remember deeper menus suck
 for usability. k, bai.
@@ -237,7 +243,7 @@ for usability. k, bai.
 .nav li ul.sub-menu li:last-child a, .nav li ul.children li:last-child a { border-bottom: 0; }
 .nav li ul.sub-menu li ul, .nav li ul.children li ul { top: 0; left: 100%; }
 .nav li:hover > ul { top: auto; visibility: visible; }
-.nav li.current-menu-item, .nav li.current_page_item, .nav li.current_page_ancestor { background: #444444; }
+.nav li.current-menu-item, .nav li.current_page_item, .nav li.current_page_ancestor { background: #333333; }
 
 /* end .nav */
 /*********************
@@ -296,6 +302,8 @@ be seen on the Desktop.
 ******************************************************************/
 .wrap { width: 1040px; }
 
+#logo { top: 30px; width: 300px; height: 150px; }
+
 /*
 you can call the larger styles if you want, but there's really no need
 */
@@ -319,3 +327,5 @@ header.php file to see what they are:
 .lt-ie8 .class { ... }
 
 */
+
+/*# sourceMappingURL=ie.css.map */

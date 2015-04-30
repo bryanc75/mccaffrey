@@ -71,3 +71,16 @@ probably best not to use it. I mean, were you going to anyway? */
 }
 
 
+/*********************
+BORDER RADIUS
+*********************/
+
+/* @include border-radius(radius); */
+@mixin border-radius($size: 0) {
+	-webkit-border-radius: $size;
+	-moz-border-radius:    $size;
+	-ms-border-radius:     $size;
+	border-radius:         $size;
+}
+
+
